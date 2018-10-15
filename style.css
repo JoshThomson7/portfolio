@@ -1,0 +1,2743 @@
+/*
+Theme Name: SourceCode
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: The SourceCoder
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*************************************************/
+/******************** GENERAL ********************/
+/*************************************************/
+
+#container{
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+/***** GENERAL *****/
+body {
+	background-color: #23262b;
+	margin: 0; }
+
+.wrapper {
+	margin: 40px 100px; }
+
+p {
+	font-family: "proxima_novaregular";
+	text-align: center;
+	font-size: 24px; }
+
+h1 {
+	font-family: "proxima_novabold";
+	text-align: center; }
+
+a {
+	font-family: "proxima_novaregular";
+	text-align: center;
+	display: block; }
+
+li {
+	font-family: "proxima_novaregular"; }
+
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+.clear:before,
+.clear:after {
+	content: ' ';
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+.clear {
+	*zoom: 1;
+}
+
+img {
+	max-width:100%;
+	vertical-align: bottom;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+}
+
+a:focus {
+	outline:0;
+}
+
+a:hover, a:active {
+	outline:0;
+}
+
+input:focus {
+	outline:0;
+	border: 0;
+}
+
+/*********************************************************************************************************************************************/
+/********************************************************* MAIN 1200px+ **********************************************************************/
+/*********************************************************************************************************************************************/
+/********************************************************* MAIN 1200px+ **********************************************************************/
+/*********************************************************************************************************************************************/
+/********************************************************* MAIN 1200px+ **********************************************************************/
+/*********************************************************************************************************************************************/
+
+/***** HEADER *****/
+.mainHeader{
+	display: block;
+	top: 0;
+	width: 100%;
+	z-index: 30;
+	height: 85px;
+    position: absolute;
+	max-width: 1500px;
+}
+.filled{
+	transition: all .5s ease;
+	background-color: #23262b;
+	border-bottom: 3px solid orange;
+}
+.headerBanner {
+	background-image: url('jt-services-banners.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 500px; }
+.headerBannerTwo{
+	background-color: #23262b;
+	height: 85px;  }
+.headerBanner .bannerTitle {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px; }
+.headerBanner .bannerTitle a {
+	cursor: pointer;
+	color: #23262b;
+	background-color: #f0f0f0;
+	border: 1px solid #f0f0f0;
+	border-radius: 100px;
+	text-decoration: none;
+	width: 220px;
+	padding: 10px 0;
+	transition: all .5s ease;
+	display: block;
+	margin: 0 auto; }
+.headerBanner .bannerTitle a:hover{
+	background-color: #23262b;
+	transform: rotate(4deg);
+	color: orange;
+	font-family: proxima_novabold;
+	border: 1px solid orange;
+}
+
+.headerLogo {
+	cursor: pointer;
+	display: inline-block; }
+.headerLogoTwo {
+	cursor: pointer;
+	max-width: 160px;
+	display: inline-block; }
+.headerLogo img, .headerLogoTwo img{
+	margin: 15px 20px;  }
+nav {
+	display: inline-block;
+	float: right;
+	width: 66%;
+	margin-top: 20px; }
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none; }
+nav ul li {
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 10px;
+	color: white;
+	font-size: 20px;
+	font-family: "proxima_novaregular"; }
+nav ul li:nth-child(1) {
+	padding: 5px 20px;
+	width: 10%; }
+nav ul li i {
+	cursor: pointer;
+	transition: all .5s ease;
+	font-size: 36px !important; }
+nav ul li i:hover{
+	color: orange;
+}
+nav ul li a{
+	color: white;
+	transition: all .5s ease;
+}
+nav ul li a:hover{
+	color: orange;
+}
+.navContactInfo{
+    padding: 0;
+}
+
+.navButton {
+    width: 30%!important;
+	cursor: pointer;
+	color: #23262b;
+	background-color: #f0f0f0;
+	border: 1px solid #f0f0f0;
+	transition: all .5s ease;
+	border-radius: 100px; }
+.navButton:hover{
+	background-color: #23262b;
+	border: 1px solid orange;
+	color: orange;
+	font-family: proxima_novabold;
+}
+.navButton i {
+	font-size: 24px !important; }
+
+/***** SLIDEOUT NAV *****/
+.slideoutNav {
+	width: 300px;
+	height: 100%;
+	background-color: #23262b;
+	color: #D8D8D8;
+	transition: all .5s;
+	position: fixed;
+	top: 0;
+	z-index: 30; }
+.slideoutNav ul {
+	margin: 0;
+	padding: 0; }
+.slideoutNav ul li {
+	color: white;
+	list-style: none;
+	cursor: pointer;
+	padding: 20px 0;
+	text-align: center; }
+.slideoutNav ul li i {
+	transition: all .5s ease;
+	font-size: 40px; }
+.slideoutNav ul li i:hover {
+	color: orange }
+.slideoutNav ul a {
+	text-decoration: none; }
+.slideoutNav ul a li {
+	color: white;
+	list-style: none;
+	cursor: pointer;
+	transition: all .5s ease;
+	font-size: 22px;
+	padding: 20px 0; }
+.slideoutNav ul a li:hover{
+	background-color: white;
+	color: #23262b;
+}
+.mobileContactInfo p{
+	color: white;
+	font-size: 22px;
+}
+.mobileContactInfo a{
+	color: white;
+	transition: all .5s ease;
+}
+.mobileContactInfo a:hover{
+	color: orange;
+}
+
+.navOpen {
+	right: 0;
+	transition: right .5s; }
+
+.navClosed {
+	right: -300px;
+	transition: right .5s; }
+
+.closeBurgerNav {
+	display: none;
+	z-index: 20; }
+
+/***** QUOTE BUTTON *****/
+.quoteContainer {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(70, 70, 70, 0.88);
+	color: #D8D8D8;
+	transition: all .5s;
+	position: fixed;
+	top: 0;
+	max-width: 1500px;
+	z-index: 100; }
+.quoteContainer #quoteSlideDown{
+	display: block;
+	margin: 0 auto;
+}
+.quoteContainer #quoteSlideDown li {
+	color: #D8D8D8;
+	list-style: none;
+	cursor: pointer;
+	padding: 20px 0;
+	text-align: center; }
+.quoteContainer #quoteSlideDown li p {
+	text-align: right; }
+.quoteContainer #quoteSlideDown li p i {
+	font-size: 28px;
+	padding: 0 20px; }
+.quoteContainer #quoteSlideDown h1 {
+	color: white; }
+
+form{
+	margin-top: 30px;
+}
+
+.wpcf7-form p{
+	margin: 5px 0 5px;
+}
+
+.formSeperator{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.formSeperator label{
+	font-family: 'proxima_novaregular';
+	text-align: center;
+	font-size: 22px;
+	color: white;
+}
+
+.submitSeperator{
+	width: 60%!important;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.wpcf7-form input{
+	background-color: #f0f0f0;
+	height: 40px;
+	border-radius: 100px;
+	border: 1px solid #23262b;
+	padding: 10px;
+	font-size: 18px;
+	color: #23262b;
+	text-align: center;
+}
+
+.wpcf7-form textarea{
+	background-color: #f0f0f0;
+	height: 150px;
+	border-radius: 20px;
+	border: 1px solid #23262b;
+	padding: 10px;
+	font-size: 18px;
+	color: #23262b;
+	text-align: center;
+}
+
+.wpcf7-submit{
+	color: #23262b!important;
+	padding: 10px 30px!important;
+	transition: all .5s ease;
+	width: 200px!important;
+	display: block;
+	margin: 0 auto;
+}
+
+.wpcf7-submit:hover{
+	color: orange!important;
+	background-color: #23262b!important;
+	border: 1px solid orange;
+	width: 300px!important;
+}
+
+.wpcf7-form-placeholder{
+	color: #f0f0f0;
+}
+
+.formHide {
+	display: none; }
+
+.formShow {
+	display: block; }
+
+.closeQuoteButton {
+	display: none;
+	z-index: 20;
+	text-align: right !important;
+	padding: 5px 30px !important; }
+
+.quoteOpen {
+	top: 0;
+	transition: top .5s; }
+
+.quoteClosed {
+	top: -120%;
+	transition: top .5s; }
+
+/**************************/
+/********** HOME **********/
+/**************************/
+/***** CLIENT SLIDER *****/
+#clientSlider {
+	background-color: #23262b;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 110px; }
+.clientLogo{
+
+}
+.slick-slide{
+	height: auto!important;
+}
+.slick-slide img {
+	margin: 0 auto;
+	padding: 20px 0; }
+
+/***** ABOUT *****/
+#aboutSection h1 {
+	text-align: center;
+	color: #23262b; }
+#aboutSection p {
+	text-align: center;
+	color: #23262b; }
+
+/***** OUR SERVICES *****/
+.servicesLink{
+padding-top: 20px
+}
+.servicesLink a{
+	color: white;
+	padding: 20px 0;
+	font-size: 21px;
+}
+.panelClick{
+	display: none;
+}
+#ourServicesSection {
+	background-color: #23262b;
+	padding: 20px 40px; }
+#ourServicesSection h1 {
+	margin: 10px 0;
+	color: white; }
+#ourServicesSection #ourServicesPanelsContainerRoof, #ourServicesSection #ourServicesPanelsContainerProperty {
+	padding-bottom: 0px; }
+#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px; }
+#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels {
+	width: 32.5%;
+	height: 190px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; }
+#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels p, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels p {
+	color: #23262b;
+	padding: 0 10px;
+	font-size: 26px; }
+#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels a, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels a {
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 20px;
+	padding: 0 30px; }
+#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels span, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels span {
+	display: none;
+	color: #fff; }
+#ourServicesSection #ourServicesPanelsContainerProperty a {
+	text-decoration: none !important;
+	font-style: normal !important; }
+
+/***** WHY CHOOSE *****/
+#whyChoose h1 {
+	color: #23262b; }
+#whyChoose a{
+	color: #f0f0f0;
+	border-radius: 100px;
+	padding: 10px 20px;
+	background-color: #23262b;
+	width: 250px;
+	margin: 15px auto;
+	border: 1px solid #23262b;
+	transition: all .5s ease;
+}
+#whyChoose a:hover{
+	background-color: #23262b;
+	color: orange;
+	border: 1px solid orange;
+	width: 350px!important;
+}
+#whyChoose #whyChooseCircles {
+	display: flex;
+	justify-content: space-between; }
+#whyChoose #whyChooseCircles .circlesContainer {
+	width: 30%; }
+#whyChoose #whyChooseCircles .circlesContainer .circles {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #D8D8D8;
+	border: 1px solid #23262b;
+	display: flex;
+	margin: 0 auto;
+	transition: 1s ease-in-out; }
+#whyChoose #whyChooseCircles .circlesContainer .circles:hover {
+	background-color: #23262b;
+	transition: 1s ease-in-out; }
+#whyChoose #whyChooseCircles .circlesContainer .circles:hover i {
+	color: orange;
+	transition: 0.8s ease-in-out; }
+#whyChoose #whyChooseCircles .circlesContainer .circles i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 70px;
+	color: #23262b;
+	transition: 0.8s ease-in-out; }
+#whyChoose #whyChooseCircles .circlesContainer p {
+	color: #23262b;
+	font-size: 20px; }
+
+/***** OUR WORK *****/
+.ourWorkContainer{
+	background-color: #23262b;
+}
+#ourWork {
+	background-color: #23262b; }
+#ourWork h1 {
+	padding: 20px 0;
+	color: #f0f0f0;
+	margin: 0; }
+#ourWorkProjects {
+	display: inline-block;
+	width: 33.11%;
+	border-top: 3px solid orange;
+}
+#ourWorkProjects .projects {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; }
+#ourWorkProjects .projects p {
+    font-family: 'proxima_novabold';
+    font-size: 28px;
+    color: white; }
+#ourWorkProjects .projects a {
+	color: #23262b;
+	border-radius: 100px;
+	padding: 10px 20px;
+	background-color: #f0f0f0;
+	font-family: 'proxima_novabold';
+	border: 1px solid #f0f0f0;
+	transition: all .5s ease;
+	width: 40%;
+	margin: 0 auto; }
+#ourWorkProjects .projects a:hover{
+	background-color: #23262b;
+	color: orange;
+	border: 1px solid orange;
+	width: 60%;
+	font-family: 'proxima_novabold';
+}
+
+#ourWorkProjectsText {
+	background-color: white;
+	height: auto!important;
+	color: #23262b; }
+
+#ourWorkView{
+	background-color: #23262b;
+}
+#ourWorkView a{
+	padding: 20px 0;
+	color: white;
+	margin: 0;
+	transition: all .5s ease;
+}
+#ourWorkView a:hover{
+    font-size: 120%;
+	color: orange;
+}
+
+#getInTouch {
+	background-color: #23262b;
+	border-bottom: 3px solid orange;
+}
+#getInTouch h1 {
+	padding: 20px 0;
+	color: white;
+	margin: 0; }
+
+#contactSection {
+	border-bottom: 3px solid orange;
+	display: flex; }
+#contactSection #contactSectionInfo {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #23262b;}
+.contactInfoLogo {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;  }
+.contactInfoLogo div{
+	width: 33.333%;
+	font-weight: bold;
+}
+.contactInfoLogo div p{
+	margin: 0!important;
+}
+.contactInfoLogo div p i{
+	color: #23262b;
+	font-size: 40px;
+	transition: all .5s ease;
+}
+.contactInfoLogo div p i:hover{
+	color: orange;
+}
+#contactSection #contactSectionMap {
+	width: 50%; }
+#contactInfoMap{
+	padding: 20px 0;
+	display: block;
+	margin: 0 auto;
+	color: white;
+}
+
+/**************************/
+/********** WORK **********/
+/**************************/
+.workPageProjects {
+	display: flex; }
+.workPageProjects .projects {
+	background: url("img/projects.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 33.333%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; }
+.workPageProjects .projects p {
+	color: white;
+	font-size: 32px; }
+.workPageProjects .projects a {
+	color: white;
+	border-radius: 100px;
+	padding: 10px 20px;
+	background-color: #23262b;
+	width: 40%;
+	margin: 0 auto; }
+
+/**************************/
+/******* SERVICES *******/
+/**************************/
+
+.servicesDescription{
+padding: 25px 40px;
+}
+.servicesDescription h1{
+color: #23262b;
+margin: 10px 0 5px;
+}
+.servicesDescription p{
+margin: 5px 0;
+}
+.servicesDescription ul li{
+font-size: 24px;
+}
+.servicesDescription h2{
+text-align: center;
+font-family: "proxima_novabold";
+	margin: 20px 0 5px;
+
+}
+
+.darkBackground{
+background-color: #23262b;
+	color: white;
+}
+
+.darkBackground h1{
+color: white!important;}
+
+
+/***** FOOTER *****/
+.mainFooter {
+	background-color: #23262b; }
+
+#bottomFooter{
+	background-color: white;
+}
+
+#bottomFooter img{
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/**************************/
+/**** INDIVIDUAL PAGE *****/
+/**************************/
+
+.websiteButton{
+	color: white;
+	border-radius: 100px;
+	padding: 10px 20px;
+	background-color: #23262b;
+	border: 1px solid #f0f0f0;
+	transition: all .5s ease;
+	width: 35%;
+	margin: 0 auto;
+	font-size: 22px;
+}
+
+.websiteButton:hover{
+    background-color: #23262b;
+    color: orange;
+    border: 1px solid orange;
+	width: 45%;
+}
+
+/**************************/
+/**** PARALLAX *****/
+/**************************/
+
+#firstParallax{
+    background-image: url('img/parallax-image-5.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondParallax{
+    background-image: url('img/parallax-opticians-image-1.jpg');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**************************/
+/**** TYPE WRITER EFFECT *****/
+/**************************/
+
+.bannerTitle h1 {
+	color: #fff;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 30px auto; /* Gives that scrolling effect as the typing happens */
+	animation:
+			typing 3.5s steps(30, end),
+			blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+}
+
+/**************************/
+/**** SINGLE PROJECT PAGE *****/
+/**************************/
+
+#overviewText h1{
+	font-size: 32px;
+}
+
+.projectPageBack{
+	margin: 20px 0 0;
+	color: #23262b;
+	font-size: 20px;
+	transition: all .5s ease;
+}
+
+.projectPageBack:hover{
+	color: orange;
+}
+
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+/*********************************************************************************************************************************************/
+/******************************************************** RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/******************************************************** RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/******************************************************** RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/******************************************************** RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+/*************************************************************************/
+/******************** START MEDIA 1024px-1119px *******************/
+/*************************************************************************/
+
+@media only screen and (min-width:1024px) and (max-width:1199px) {
+
+	p{
+		font-size: 20px;
+	}
+
+	/***** HEADER *****/
+	.headerBanner {
+		height: 500px; }
+	.headerBanner .bannerTitle {
+		color: white;
+		font-size: 20px; }
+	.headerBanner .bannerTitle a {
+		font-size: 20px;
+		border-radius: 100px;
+		text-decoration: none;
+		width: 220px;
+		padding: 10px 0;
+		transition: all .5s ease;
+		display: block;
+		margin: 0 auto; }
+
+    .mainHeader{
+        height: 80px!important;
+    }
+    .headerBannerTwo{
+        height: 80px!important;
+    }
+
+	.headerLogo {
+		display: inline-block; }
+	.headerLogo img, .headerLogoTwo img{
+		width: 160px;
+	}
+
+	nav {
+		display: inline-block;
+		float: right;
+		width: 66%;
+		margin-top: 20px; }
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	nav ul li {
+		float: right;
+		width: 40%;
+		text-align: center;
+		padding: 10px 20px;
+		color: white;
+		font-size: 20px;
+		font-family: "proxima_novaregular"; }
+	nav ul li:nth-child(1) {
+		padding: 5px 20px;
+		width: 10%; }
+	nav ul li i {
+		font-size: 36px !important; }
+    .navContactInfo{
+        padding: 0 10px!important;
+    }
+
+	.navButton {
+		color: #23262b;
+        width: 30%!important;
+        font-size: 20px;
+		background-color: #f0f0f0;
+		border: 1px solid #f0f0f0;
+		transition: all .5s ease;
+		border-radius: 100px; }
+	.navButton:hover{
+		background-color: #23262b;
+		border: 1px solid #23262b;
+		color: white;
+	}
+	.navButton i {
+		font-size: 24px !important; }
+
+	/***** SLIDEOUT NAV *****/
+	.slideoutNav {
+		width: 300px;
+		height: 100%;
+		background-color: #23262b;
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 30; }
+	.slideoutNav ul {
+		margin: 0;
+		padding: 0; }
+	.slideoutNav ul li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.slideoutNav ul li i {
+		font-size: 40px; }
+	.slideoutNav ul a {
+		text-decoration: none; }
+	.slideoutNav ul a li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		transition: all .5s ease;
+		font-size: 20px;
+		padding: 20px 0; }
+	.slideoutNav ul a li:hover{
+		background-color: white;
+		color: #23262b;
+	}
+	.mobileContactInfo p{
+		color: white;
+		font-size: 20px;
+	}
+	.mobileContactInfo a{
+		color: white;
+	}
+
+	.navOpen {
+		right: 0;
+		transition: right .5s; }
+
+	.navClosed {
+		right: -300px;
+		transition: right .5s; }
+
+	.closeBurgerNav {
+		display: none;
+		z-index: 20; }
+
+	/***** QUOTE BUTTON *****/
+	.quoteContainer {
+		height: 100vh;
+		width: 100%;
+		background-color: rgba(70, 70, 70, 0.88);
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 100; }
+	.quoteContainer #quoteSlideDown li {
+		color: #D8D8D8;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.quoteContainer #quoteSlideDown li p {
+		text-align: right; }
+	.quoteContainer #quoteSlideDown li p i {
+		font-size: 28px;
+		padding: 0 20px; }
+	.quoteContainer #quoteSlideDown h1 {
+		color: white; }
+
+	.formHide {
+		display: none; }
+
+	.formShow {
+		display: block; }
+
+	.closeQuoteButton {
+		display: none;
+		z-index: 20;
+		text-align: right !important;
+		padding: 5px 30px !important; }
+
+	.quoteOpen {
+		top: 0;
+		transition: top .5s; }
+
+	.quoteClosed {
+		top: -120%;
+		transition: top .5s; }
+
+	/**************************/
+	/********** HOME **********/
+	/**************************/
+	/***** CLIENT SLIDER *****/
+	#clientSlider {
+		background-color: #23262b;
+		height: 160px; }
+
+	.slick-slide img {
+		margin: 0 auto;
+		padding: 20px 0; }
+
+	/***** ABOUT *****/
+	#aboutSection h1 {
+		text-align: center;
+		color: #23262b; }
+	#aboutSection p {
+		text-align: center;
+		color: #23262b; }
+
+	/***** OUR SERVICES *****/
+	.panelClick{
+		display: none;
+	}
+	#ourServicesSection {
+		background-color: #23262b;
+		padding: 20px 40px; }
+	#ourServicesSection h1 {
+		color: white; }
+	#ourServicesSection #ourServicesPanelsContainerRoof, #ourServicesSection #ourServicesPanelsContainerProperty {
+		padding-bottom: 0px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 30px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels {
+		width: 32.5%;
+		height: 230px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels p, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels p {
+		color: white;
+		padding: 0 10px;
+		font-size: 22px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels a, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels a {
+		color: white;
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 18px;
+		padding: 0 30px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels span, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels span {
+		display: none;
+		color: #fff; }
+	#ourServicesSection #ourServicesPanelsContainerProperty a {
+		text-decoration: none !important;
+		font-style: normal !important; }
+
+	/***** WHY CHOOSE *****/
+	#whyChoose h1 {
+		color: #23262b; }
+	#whyChoose a{
+		border-radius: 100px;
+		padding: 10px 20px;
+		width: 250px;
+		margin: 15px auto;
+		transition: all .5s ease;
+	}
+	#whyChoose #whyChooseCircles {
+		display: flex;
+		justify-content: space-between; }
+	#whyChoose #whyChooseCircles .circlesContainer {
+		width: 30%; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		background-color: #D8D8D8;
+		border: 1px solid #23262b;
+		display: flex;
+		margin: 0 auto;
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover {
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover i {
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles i {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 70px;
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer p {
+		color: #23262b;
+		font-size: 20px; }
+
+	/***** OUR WORK *****/
+	#ourWork {
+		background-color: #23262b; }
+	#ourWork h1 {
+		padding: 20px 0;
+		color: white;
+		margin: 0; }
+	#ourWorkProjects {
+		display: inline-block;
+		width: 33%;
+	}
+	#ourWorkProjects .projects {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 240px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourWorkProjects .projects p {
+		color: white;
+        font-size: 26px;
+    }
+	#ourWorkProjects .projects a {
+		border-radius: 100px;
+		padding: 10px 20px;
+		font-family: 'proxima_novabold';
+		transition: all .5s ease;
+		width: 40%;
+		margin: 0 auto; }
+
+	#ourWorkProjectsText {
+		background-color: white;
+		color: #23262b; }
+
+	#ourWorkView{
+		background-color: #23262b;
+	}
+	#ourWorkView a{
+		padding: 20px 0;
+		color: white;
+		margin: 0;
+	}
+
+	#getInTouch {
+		background-color: #23262b; }
+	#getInTouch h1 {
+		padding: 20px 0;
+		color: white;
+		margin: 0; }
+
+	#contactSection {
+		display: flex; }
+	#contactSection #contactSectionInfo {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0!important; }
+	#contactSection #contactSectionInfo .contactInfo {
+		width: 30%; }
+	#contactSection #contactSectionInfo .contactInfo ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	#contactSection #contactSectionMap {
+		width: 50%; }
+	#contactInfoMap{
+		width: 50%;
+        padding: 0!important;
+	}
+    #contactInfoMap textarea{
+        height: 120px!important;
+    }
+
+	/**************************/
+	/********** WORK **********/
+	/**************************/
+	.workPageProjects {
+		display: flex; }
+	.workPageProjects .projects {
+		background: url("img/projects.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	.workPageProjects .projects p {
+		color: white;
+		font-size: 32px; }
+	.workPageProjects .projects a {
+		color: white;
+		border-radius: 100px;
+		padding: 10px 20px;
+		background-color: #23262b;
+		width: 40%;
+		margin: 0 auto; }
+
+	/**************************/
+	/******* SERVICES *******/
+	/**************************/
+
+	.servicesDescription ul li{
+		font-size: 20px;
+	}
+
+	/***** FOOTER *****/
+	.mainFooter {
+		background-color: #23262b; }
+
+}
+
+
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+/*************************************************************************/
+/******************** START MEDIA 768px-1023px *******************/
+/*************************************************************************/
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+	p{
+		font-size: 16px;
+	}
+
+	.wrapper{
+		margin: 30px 50px!important;
+	}
+
+	/***** HEADER *****/
+	.headerBanner {
+		height: 400px; }
+	.headerBannerTwo{
+		background-color: #23262b;
+		height: 75px;  }
+	.headerBanner .bannerTitle {
+		color: white;
+		font-size: 16px; }
+	.headerBanner .bannerTitle a {
+		font-size: 18px;
+		border-radius: 100px;
+		text-decoration: none;
+		width: 200px;
+		padding: 8px 0;
+		transition: all .5s ease;
+		display: block;
+		margin: 0 auto; }
+
+	.headerLogo {
+		display: inline-block; }
+	.headerLogoTwo {
+		max-width: 130px;
+		display: inline-block; }
+	.headerLogo img, .headerLogoTwo img{
+		width: 110px;
+	}
+
+    .mainHeader{
+        height: 75px!important;  }
+    .headerLogo img, .headerLogoTwo img{
+        margin: 15px 20px!important;  }
+	nav {
+		display: inline-block;
+		float: right;
+		width: 73%;
+		margin-top: 20px; }
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	nav ul li {
+		float: right;
+		width: 45%;
+		text-align: center;
+		padding: 8px 10px;
+		color: white;
+		font-size: 18px;
+		font-family: "proxima_novaregular"; }
+	nav ul li:nth-child(1) {
+		padding: 2px 10px;
+		width: 10%; }
+	nav ul li i {
+		font-size: 36px !important; }
+    .navContactInfo{
+        padding: 0 10px!important;  }
+	.navButton {
+		color: #23262b;
+		font-size: 18px;
+		background-color: #f0f0f0;
+		border: 1px solid #f0f0f0;
+		transition: all .5s ease;
+		border-radius: 100px; }
+	.navButton:hover{
+		background-color: #23262b;
+		border: 1px solid #23262b;
+		color: white;
+	}
+	.navButton i {
+		font-size: 24px !important; }
+
+	/***** SLIDEOUT NAV *****/
+	.slideoutNav {
+		width: 300px;
+		height: 100%;
+		background-color: #23262b;
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 30; }
+	.slideoutNav ul {
+		margin: 0;
+		padding: 0; }
+	.slideoutNav ul li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.slideoutNav ul li i {
+		font-size: 40px; }
+	.slideoutNav ul a {
+		text-decoration: none; }
+	.slideoutNav ul a li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		transition: all .5s ease;
+		font-size: 18px;
+		padding: 20px 0; }
+	.slideoutNav ul a li:hover{
+		background-color: white;
+		color: #23262b;
+	}
+	.mobileContactInfo p{
+		color: white;
+		font-size: 18px;
+	}
+	.mobileContactInfo a{
+		color: white;
+	}
+
+	.navOpen {
+		right: 0;
+		transition: right .5s; }
+
+	.navClosed {
+		right: -300px;
+		transition: right .5s; }
+
+	.closeBurgerNav {
+		display: none;
+		z-index: 20; }
+
+	/***** QUOTE BUTTON *****/
+	.quoteContainer {
+		height: 100vh;
+		width: 100%;
+		background-color: rgba(70, 70, 70, 0.88);
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 100; }
+	.quoteContainer #quoteSlideDown li {
+		color: #D8D8D8;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.quoteContainer #quoteSlideDown li p {
+		text-align: right; }
+	.quoteContainer #quoteSlideDown li p i {
+		font-size: 28px;
+		padding: 0 20px; }
+	.quoteContainer #quoteSlideDown h1 {
+        margin: 0!important;
+		color: white; }
+	.quoteContainer #quoteSlideDown #formOne {
+		color: white; }
+
+	.formHide {
+		display: none; }
+
+	.formShow {
+		display: block; }
+
+	.closeQuoteButton {
+		display: none;
+		z-index: 20;
+		text-align: right !important;
+		padding: 10px 30px !important; }
+
+	.quoteOpen {
+		top: 0;
+		transition: top .5s; }
+
+	.quoteClosed {
+		top: -120%;
+		transition: top .5s; }
+
+	/**************************/
+	/********** HOME **********/
+	/**************************/
+	/***** CLIENT SLIDER *****/
+	#clientSlider {
+		background-color: #23262b;
+		height: 120px; }
+
+	.slick-slide img {
+		margin: 0 auto;
+		padding: 20px 0; }
+
+	/***** ABOUT *****/
+	#aboutSection h1 {
+		text-align: center;
+		font-size: 24px;
+		color: #23262b; }
+	#aboutSection p {
+		text-align: center;
+		color: #23262b; }
+
+	/***** OUR SERVICES *****/
+	.servicesLink a{
+		color: white;
+		padding: 15px 0;
+		font-size: 18px;
+	}
+	.panelClick{
+		display: block;
+	}
+	.panelHover{
+		display: none;
+	}
+	#ourServicesSection {
+		background-color: #23262b;
+		padding: 20px 40px; }
+	#ourServicesSection h1 {
+		font-size: 24px;
+		color: white; }
+	#ourServicesSection #ourServicesPanelsContainerRoof, #ourServicesSection #ourServicesPanelsContainerProperty {
+		padding-bottom: 0px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 10px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels {
+		width: 32.5%;
+		height: 180px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels p, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels p {
+		color: white;
+		padding: 0 10px;
+		font-size: 19px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels a, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels a {
+		color: white;
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 16px;
+		padding: 0 30px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels span, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels span {
+		display: none;
+		color: #fff; }
+	#ourServicesSection #ourServicesPanelsContainerProperty a {
+		text-decoration: none !important;
+		font-style: normal !important; }
+
+	/***** WHY CHOOSE *****/
+	#whyChoose h1 {
+		font-size: 24px;
+		color: #23262b; }
+	#whyChoose a{
+		border-radius: 100px;
+		padding: 10px 20px;
+		width: 200px;
+		margin: 15px auto;
+		transition: all .5s ease;
+	}
+	#whyChoose a:hover{
+		width: 300px!important;
+	}
+	#whyChoose #whyChooseCircles {
+		display: flex;
+		justify-content: space-between; }
+	#whyChoose #whyChooseCircles .circlesContainer {
+		width: 31%; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles {
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		background-color: #D8D8D8;
+		border: 1px solid #23262b;
+		display: flex;
+		margin: 0 auto;
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover {
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover i {
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles i {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 60px;
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer p {
+		color: #23262b;
+		font-size: 16px; }
+
+	/***** OUR WORK *****/
+	#ourWork {
+		background-color: #23262b; }
+	#ourWork h1 {
+		padding: 15px 0;
+		font-size: 24px;
+		color: white;
+		margin: 0; }
+	#ourWorkProjects {
+		display: inline-block;
+		width: 32.98%;
+	}
+	#ourWorkProjects .projects {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 240px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourWorkProjects .projects p {
+		font-size: 20px;
+		color: white; }
+	#ourWorkProjects .projects a {
+		border-radius: 100px;
+		padding: 8px 20px;
+		font-family: 'proxima_novabold';
+		transition: all .5s ease;
+		width: 40%;
+		margin: 0 auto; }
+	#ourWorkProjectsText {
+		background-color: white;
+		color: #23262b; }
+
+	#ourWorkView{
+		background-color: #23262b;
+	}
+	#ourWorkView a{
+		padding: 20px 0;
+		color: white;
+		margin: 0;
+	}
+
+	#getInTouch {
+		background-color: #23262b; }
+	#getInTouch h1 {
+		padding: 15px 0;
+		font-size: 24px;
+		color: white;
+		margin: 0; }
+
+	#contactSection {
+		display: inline; }
+	#contactSection #contactSectionInfo {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0!important; }
+	#contactSection #contactSectionInfo .contactInfo {
+		text-align: center;
+		width: 100%; }
+	#contactSection #contactSectionInfo .contactInfo ul li{
+		font-size: 16px;
+	}
+	#contactSection #contactSectionInfo .contactInfoLogo {
+		width: 100%; }
+	#contactSection #contactSectionInfo .contactInfoLogo img {
+		width: 50%; }
+	#contactSection #contactSectionInfo .contactInfo ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	#contactSection #contactSectionMap {
+		width: 50%; }
+	#contactInfoMap{
+		width: 100%;
+		height: auto;
+        padding: 20px 0 0;
+	}
+
+	/**************************/
+	/********** WORK **********/
+	/**************************/
+	.workPageProjects {
+		display: flex; }
+	.workPageProjects .projects {
+		background: url("img/projects.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	.workPageProjects .projects p {
+		color: white;
+		font-size: 32px; }
+	.workPageProjects .projects a {
+		color: white;
+		border-radius: 100px;
+		padding: 10px 20px;
+		background-color: #23262b;
+		width: 40%;
+		margin: 0 auto; }
+
+	/**************************/
+	/******* SERVICES *******/
+	/**************************/
+
+	.servicesDescription{
+		padding: 25px 30px;
+	}
+	.servicesDescription h1{
+		color: #23262b;
+		font-size: 22px;
+		margin: 10px 0 5px;
+	}
+
+	.servicesDescription p{
+		margin: 5px 0;
+	}
+	.servicesDescription ul li{
+		font-size: 16px;
+	}
+	.servicesDescription h2{
+		text-align: center;
+		font-family: "proxima_novabold";
+		font-size: 18px;
+		margin: 20px 0 5px;
+	}
+
+	/***** FOOTER *****/
+	.mainFooter {
+		background-color: #23262b; }
+
+	/******************************************************************************************************/
+	/********************************************* SLIDER **************************************************/
+	/******************************************************************************************************/
+
+	#slider, #slider .sliderInner {
+		width:100%;height:450px!important;/* Must be the same size as the slider images */
+		border-radius:3px;
+	}
+
+	/**************************/
+	/**** INDIVIDUAL PAGE *****/
+	/**************************/
+
+	.websiteButton{
+		color: white;
+		border-radius: 100px;
+		padding: 10px 20px;
+		background-color: #23262b;
+		border: 1px solid #f0f0f0;
+		transition: all .5s ease;
+		width: 35%;
+		margin: 0 auto;
+		font-size: 20px;
+	}
+
+	.websiteButton:hover{
+		background-color: #23262b;
+		color: orange;
+		border: 1px solid orange;
+		width: 45%;
+	}
+}
+
+
+
+
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+/*************************************************************************/
+/******************** START MEDIA 480px - 767px *******************/
+/*************************************************************************/
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+
+	p{
+		font-size: 16px;
+	}
+
+	.wrapper{
+		margin: 30px 30px;
+	}
+
+	/***** HEADER *****/
+	.mainHeader {
+		display: block;
+		position: fixed!important;
+        height: 60px!important;
+	}
+	.headerBanner {
+		height: 350px; }
+	.headerBannerTwo{
+		max-height: 60px;
+	}
+	.headerBanner .bannerTitle {
+		color: white;
+		padding: 60px 25px 0;
+		font-size: 14px; }
+	.headerBanner .bannerTitle a {
+		font-size: 18px;
+		border-radius: 100px;
+		text-decoration: none;
+		width: 180px;
+		padding: 8px 0;
+		transition: all .5s ease;
+		display: block;
+		margin: 0 auto; }
+
+	.headerLogo {
+		display: inline-block; }
+	.headerLogoTwo {
+		max-width: 100px;
+		display: inline-block; }
+	.headerLogo img, .headerLogoTwo img{
+		width: 100px;
+        margin: 10px 20px;
+	}
+
+	nav {
+		display: inline-block;
+		float: right;
+		width: 70%;
+		margin-top: 10px; }
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	nav ul li {
+		float: right;
+		width: 50%;
+		text-align: center;
+		padding: 8px 10px;
+		color: white;
+		font-size: 18px;
+		font-family: "proxima_novaregular"; }
+	nav ul li:nth-child(1) {
+		padding: 0 10px;
+		margin: 0 10px;
+		width: 20%; }
+	nav ul li i {
+		font-size: 36px !important; }
+
+	.navButton {
+        width: 50%!important;
+		font-size: 18px;
+		transition: all .5s ease;
+		border-radius: 100px; }
+	.navButton i {
+		font-size: 24px !important; }
+	.navContactInfo{
+		display: none;
+	}
+
+	/***** SLIDEOUT NAV *****/
+	.slideoutNav {
+		width: 240px;
+		height: 100%;
+		background-color: #23262b;
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 30; }
+	.slideoutNav ul {
+		margin: 0;
+		padding: 0; }
+	.slideoutNav ul li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.slideoutNav ul li i {
+		font-size: 40px; }
+	.slideoutNav ul a {
+		text-decoration: none; }
+	.slideoutNav ul a li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		transition: all .5s ease;
+		font-size: 16px;
+		padding: 20px 0; }
+	.slideoutNav ul a li:hover{
+		background-color: white;
+		color: #23262b;
+	}
+	.mobileContactInfo p{
+		color: white;
+		font-size: 16px;
+	}
+	.mobileContactInfo a{
+		color: white;
+	}
+
+	.navOpen {
+		right: 0;
+		transition: right .5s; }
+
+	.navClosed {
+		right: -240px;
+		transition: right .5s; }
+
+	.closeBurgerNav {
+		display: none;
+		z-index: 20; }
+
+	/***** QUOTE BUTTON *****/
+	.quoteContainer {
+		height: 100vh;
+		width: 100%;
+		background-color: rgba(70, 70, 70, 0.88);
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 100; }
+	.quoteContainer #quoteSlideDown li {
+		color: #D8D8D8;
+		list-style: none;
+		cursor: pointer;
+		text-align: center; }
+	.quoteContainer #quoteSlideDown li p {
+		margin: 10px 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: right; }
+	.quoteContainer #quoteSlideDown li p i {
+		font-size: 28px;
+		padding: 0 20px; }
+	.quoteContainer #quoteSlideDown h1 {
+		font-size: 28px;
+		margin: 0;
+		color: white; }
+
+	.formHide {
+		display: none; }
+
+	.formShow {
+		display: block; }
+
+	.closeQuoteButton {
+		display: none;
+		z-index: 20;
+		text-align: right !important;
+		padding: 5px 0 !important; }
+
+	.quoteOpen {
+		top: 0;
+		transition: top .5s; }
+
+	.quoteClosed {
+		top: -120%;
+		transition: top .5s; }
+
+	/**************************/
+	/********** HOME **********/
+	/**************************/
+	/***** CLIENT SLIDER *****/
+	#clientSlider {
+		background-color: #23262b;
+		height: 90px; }
+
+	.slick-slide img {
+		margin: 0 auto;
+		padding: 20px 0; }
+
+	/***** ABOUT *****/
+	#aboutSection h1 {
+		text-align: center;
+		font-size: 24px;
+		color: #23262b; }
+	#aboutSection p {
+		text-align: center;
+		color: #23262b; }
+
+	/***** OUR SERVICES *****/
+	.servicesLink{
+		padding-top: 10px!important;
+	}
+	.servicesLink a{
+		color: white;
+		padding: 10px 0;
+		font-size: 16px;
+	}
+	.panelClick{
+		display: block;
+	}
+	.panelHover{
+		display: none;
+	}
+	#ourServicesSection {
+		background-color: #23262b;
+		padding: 20px 40px; }
+	#ourServicesSection h1 {
+		font-size: 24px;
+		color: white; }
+	#ourServicesSection #ourServicesPanelsContainerRoof, #ourServicesSection #ourServicesPanelsContainerProperty {
+		padding-bottom: 0px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels {
+		display: inline-block;
+		width: 100%;
+		padding-top: 0; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels {
+		width: 80%;
+		height: 180px;
+		display: flex;
+		justify-content: center;
+		margin: 5px auto;}
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels p, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels p {
+		color: white;
+		padding: 0 10px;
+		font-size: 20px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels a, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels a {
+		color: white;
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 16px;
+		padding: 0 30px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels span, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels span {
+		display: none;
+		color: #fff; }
+	#ourServicesSection #ourServicesPanelsContainerProperty a {
+		text-decoration: none !important;
+		font-style: normal !important; }
+
+	/***** WHY CHOOSE *****/
+	#whyChoose h1 {
+		font-size: 24px;
+		color: #23262b; }
+	#whyChoose a{
+		border-radius: 100px;
+		padding: 10px 20px;
+		width: 40%;
+		margin: 15px auto;
+		transition: all .5s ease;
+	}
+	#whyChoose a:hover{
+		width: 60%;
+	}
+	#whyChoose #whyChooseCircles {
+		display: flex;
+		justify-content: space-between; }
+	#whyChoose #whyChooseCircles .circlesContainer {
+		width: 30%; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles {
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		background-color: #D8D8D8;
+		border: 1px solid #23262b;
+		display: flex;
+		margin: 0 auto;
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover {
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover i {
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles i {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 50px;
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer p {
+		color: #23262b;
+		margin: 15px 0 5px;
+		font-size: 16px; }
+
+	/***** OUR WORK *****/
+	#ourWork {
+		background-color: #23262b; }
+	#ourWork h1 {
+		padding: 15px 0;
+		font-size: 24px;
+		color: white;
+		margin: 0; }
+	#ourWorkProjects {
+		display: inline-block;
+		width: 100%;
+	}
+	#ourWorkProjects .projects {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 240px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourWorkProjects .projects p {
+		font-size: 28px;
+		color: white; }
+	#ourWorkProjects .projects a {
+		border-radius: 100px;
+		padding: 8px 20px;
+		transition: all .5s ease;
+		width: 40%;
+		margin: 0 auto; }
+
+	#ourWorkProjectsText {
+		background-color: white;
+		color: #23262b; }
+
+	#ourWorkView{
+		background-color: #23262b;
+	}
+	#ourWorkView a{
+		padding: 15px 0;
+		color: white;
+		margin: 0;
+	}
+
+	#getInTouch {
+		background-color: #23262b; }
+	#getInTouch h1 {
+		padding: 15px 0;
+		font-size: 24px;
+		color: white;
+		margin: 0; }
+
+	#contactSection {
+		display: inline; }
+	#contactSection #contactSectionInfo {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0; }
+	#contactSection #contactSectionInfo .contactInfo {
+		text-align: center;
+		width: 100%; }
+	#contactSection #contactSectionInfo .contactInfo ul li{
+		font-size: 16px;
+	}
+	#contactSection #contactSectionInfo .contactInfoLogo {
+		width: 100%; }
+	#contactSection #contactSectionInfo .contactInfoLogo img {
+		width: 70%; }
+	#contactSection #contactSectionInfo .contactInfo ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	#contactSection #contactSectionMap {
+		width: 50%; }
+	#contactInfoMap{
+		width: 100%;
+		height: auto;
+        padding: 20px 0 0;
+	}
+    #contactInfoMap textarea{
+        height: 100px!important;
+    }
+
+	/**************************/
+	/********** WORK **********/
+	/**************************/
+	.workPageProjects {
+		display: flex; }
+	.workPageProjects .projects {
+		background: url("img/projects.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	.workPageProjects .projects p {
+		color: white;
+		font-size: 32px; }
+	.workPageProjects .projects a {
+		color: white;
+		border-radius: 100px;
+		padding: 10px 20px;
+		background-color: #23262b;
+		width: 40%;
+		margin: 0 auto; }
+
+	/**************************/
+	/******* SERVICES *******/
+	/**************************/
+
+	.servicesDescription{
+		padding: 20px 30px;
+	}
+	.servicesDescription h1{
+		color: #23262b;
+		font-size: 22px;
+		margin: 10px 0 5px;
+	}
+	.servicesDescription ul li{
+		font-size: 16px;
+	}
+	.servicesDescription h2{
+		text-align: center;
+		font-family: "proxima_novabold";
+		font-size: 16px;
+		margin: 20px 0 5px;
+	}
+
+	/***** FOOTER *****/
+	.mainFooter {
+		background-color: #23262b; }
+
+	/******************************************************************************************************/
+	/********************************************* SLIDER **************************************************/
+	/******************************************************************************************************/
+
+	#slider, #slider .sliderInner {
+		width:100%;height:400px!important;/* Must be the same size as the slider images */
+		border-radius:3px;
+	}
+
+	/**************************/
+	/**** PARALLAX *****/
+	/**************************/
+
+	#firstParallax{
+		display: none;
+	}
+
+	#secondParallax{
+		display: none;
+	}
+
+	/**************************/
+	/**** FORM FOOTER *****/
+	/**************************/
+
+	.contactInfoLogo{
+		flex-direction: column;
+		padding: 0!important;
+	}
+
+	.contactInfoLogo div{
+		width: 100%;
+	}
+
+	.contactInfoLogo div p{
+		margin: 15px!important;
+	}
+
+}
+
+
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+/*************************************************************************/
+/******************** START MEDIA 320px - 479px *******************/
+/*************************************************************************/
+
+@media only screen and (min-width:320px) and (max-width:479px) {
+
+	p{
+		font-size: 14px;
+	}
+
+	.wrapper{
+		margin: 20px 20px;
+	}
+
+	/***** HEADER *****/
+	.mainHeader {
+		display: block;
+		position: fixed!important;
+        height: 55px!important;
+	}
+	.headerBanner {
+		height: 300px;
+    }
+	.headerBannerTwo{
+		height: 55px!important;
+	}
+	.headerBanner .bannerTitle {
+		color: white;
+		padding: 50px 25px 0;
+		line-height: 28px;
+		font-size: 13px; }
+	.headerBanner .bannerTitle a {
+		font-size: 14px;
+		border-radius: 100px;
+		text-decoration: none;
+		width: 160px;
+		padding: 1px 0;
+		transition: all .5s ease;
+		display: block;
+		margin: 0 auto; }
+
+	.headerLogo {
+		display: inline-block; }
+	.headerLogo img, .headerLogoTwo img{
+        margin: 10px!important;
+		width: 80px;
+	}
+
+	nav {
+		display: inline-block;
+		float: right;
+		width: 68%;
+		margin-top: 10px; }
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	nav ul li {
+		float: right;
+		width: 60%;
+		text-align: center;
+		padding: 6px 10px;
+		color: white;
+		font-size: 18px;
+		font-family: "proxima_novaregular"; }
+	nav ul li:nth-child(1) {
+		padding: 0 10px;
+		margin: 0 10px;
+		width: 20%; }
+	nav ul li i {
+		font-size: 32px !important; }
+
+	.navButton {
+		font-size: 14px;
+        width: 60%!important;
+		transition: all .5s ease;
+		border-radius: 100px; }
+	.navButton i {
+		font-size: 20px !important; }
+	.navContactInfo{
+		display: none;
+	}
+
+	/***** SLIDEOUT NAV *****/
+	.slideoutNav {
+		width: 240px;
+		height: 100%;
+		background-color: #23262b;
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 30; }
+	.slideoutNav ul {
+		margin: 0;
+		padding: 0; }
+	.slideoutNav ul li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		padding: 20px 0;
+		text-align: center; }
+	.slideoutNav ul li i {
+		font-size: 40px; }
+	.slideoutNav ul a {
+		text-decoration: none; }
+	.slideoutNav ul a li {
+		color: white;
+		list-style: none;
+		cursor: pointer;
+		transition: all .5s ease;
+		font-size: 16px;
+		padding: 20px 0; }
+	.slideoutNav ul a li:hover{
+		background-color: white;
+		color: #23262b;
+	}
+	.mobileContactInfo p{
+		color: white;
+		font-size: 16px;
+	}
+	.mobileContactInfo a{
+		color: white;
+	}
+
+	.navOpen {
+		right: 0;
+		transition: right .5s; }
+
+	.navClosed {
+		right: -240px;
+		transition: right .5s; }
+
+	.closeBurgerNav {
+		display: none;
+		z-index: 20; }
+
+	/***** QUOTE BUTTON *****/
+	.quoteContainer {
+		height: 100vh;
+		width: 100%;
+		background-color: rgba(70, 70, 70, 0.88);
+		color: #D8D8D8;
+		transition: all .5s;
+		position: fixed;
+		top: 0;
+		z-index: 100; }
+	.quoteContainer #quoteSlideDown li {
+		color: #D8D8D8;
+		list-style: none;
+		cursor: pointer;
+		text-align: center; }
+	.quoteContainer #quoteSlideDown li p {
+		margin: 10px 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		text-align: right; }
+	.quoteContainer #quoteSlideDown li p i {
+		font-size: 28px;
+		padding: 0 20px; }
+	.quoteContainer #quoteSlideDown h1 {
+		font-size: 24px;
+		margin: 0;
+		color: white; }
+
+	.formHide {
+		display: none; }
+
+	.formShow {
+		display: block; }
+
+	.closeQuoteButton {
+		display: none;
+		z-index: 20;
+		text-align: right !important;
+		padding: 5px 0 !important; }
+
+	.quoteOpen {
+		top: 0;
+		transition: top .5s; }
+
+	.quoteClosed {
+		top: -120%;
+		transition: top .5s; }
+
+	/**************************/
+	/********** HOME **********/
+	/**************************/
+	/***** CLIENT SLIDER *****/
+	#clientSlider {
+		background-color: #23262b;
+		height: 70px; }
+
+	.slick-slide img {
+		margin: 0 auto;
+		padding: 20px 0; }
+
+	/***** ABOUT *****/
+	#aboutSection h1 {
+		text-align: center;
+		font-size: 24px;
+		color: #23262b; }
+	#aboutSection p {
+		text-align: center;
+		color: #23262b; }
+
+	/***** OUR SERVICES *****/
+	.servicesLink{
+		padding-top: 10px!important;
+	}
+	.servicesLink a{
+		color: white;
+		padding: 10px 0;
+		font-size: 16px;
+	}
+	.panelClick{
+		display: block;
+	}
+	.panelHover{
+		display: none;
+	}
+	#ourServicesSection {
+		background-color: #23262b;
+		padding: 20px 40px; }
+	#ourServicesSection h1 {
+		font-size: 24px;
+		color: white; }
+	#ourServicesSection #ourServicesPanelsContainerRoof, #ourServicesSection #ourServicesPanelsContainerProperty {
+		padding-bottom: 0px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels {
+		display: inline-block;
+		width: 100%;
+		padding-top: 0; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels {
+		width: 100%;
+		height: 180px;
+		display: flex;
+		justify-content: center;
+		margin: 5px auto;}
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels p, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels p {
+		color: white;
+		padding: 0 10px;
+		font-size: 20px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels a, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels a {
+		color: white;
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 14px;
+		padding: 0 30px; }
+	#ourServicesSection #ourServicesPanelsContainerRoof .ourServicesPanels .panels span, #ourServicesSection #ourServicesPanelsContainerProperty .ourServicesPanels .panels span {
+		display: none;
+		color: #fff; }
+	#ourServicesSection #ourServicesPanelsContainerProperty a {
+		text-decoration: none !important;
+		font-style: normal !important; }
+
+	/***** WHY CHOOSE *****/
+	#whyChoose h1 {
+		font-size: 24px;
+		color: #23262b; }
+	#whyChoose a{
+		border-radius: 100px;
+		padding: 8px 20px;
+		width: 60%;
+		margin: 15px auto;
+		transition: all .5s ease;
+	}
+	#whyChoose a:hover{
+		width: 70%;
+	}
+	#whyChoose #whyChooseCircles {
+		display: flex;
+        flex-direction: column;
+		justify-content: space-between; }
+	#whyChoose #whyChooseCircles .circlesContainer {
+		width: 100%; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles {
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		background-color: #D8D8D8;
+		border: 1px solid #23262b;
+		display: flex;
+		margin: 0 auto;
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover {
+		transition: 1s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles:hover i {
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer .circles i {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 40px;
+		transition: 0.8s ease-in-out; }
+	#whyChoose #whyChooseCircles .circlesContainer p {
+		color: #23262b;
+		margin: 5px 0 15px;
+		font-size: 14px; }
+
+	/***** OUR WORK *****/
+	#ourWork {
+		background-color: #23262b; }
+	#ourWork h1 {
+		padding: 15px 0;
+		font-size: 22px;
+		color: white;
+		margin: 0; }
+	#ourWorkProjects {
+		display: inline-block;
+		width: 100%;
+	}
+	#ourWorkProjects .projects {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 200px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	#ourWorkProjects .projects p {
+		font-size: 22px;
+		color: white; }
+	#ourWorkProjects .projects a {
+		border-radius: 100px;
+		padding: 4px 20px;
+		transition: all .5s ease;
+		width: 40%;
+		margin: 0 auto; }
+
+	#ourWorkProjectsText {
+		background-color: white;
+		color: #23262b; }
+
+	#ourWorkView{
+		background-color: #23262b;
+	}
+	#ourWorkView a{
+		padding: 10px 0;
+		color: white;
+		margin: 0;
+	}
+
+	#getInTouch {
+		background-color: #23262b; }
+	#getInTouch h1 {
+		padding: 15px 0;
+		font-size: 24px;
+		color: white;
+		margin: 0; }
+
+	#contactSection {
+		display: inline; }
+	#contactSection #contactSectionInfo {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0; }
+	#contactSection #contactSectionInfo .contactInfo {
+		text-align: center;
+		width: 100%; }
+	#contactSection #contactSectionInfo .contactInfo ul li{
+		font-size: 16px;
+	}
+	#contactSection #contactSectionInfo .contactInfoLogo {
+		display: none; }
+	#contactSection #contactSectionInfo .contactInfoLogo img {
+		width: 70%; }
+	#contactSection #contactSectionInfo .contactInfo ul {
+		margin: 0;
+		padding: 0;
+		list-style: none; }
+	#contactSection #contactSectionMap {
+		width: 50%; }
+	#contactInfoMap{
+		width: 100%;
+		height: auto;
+        padding: 20px 0 0!important;
+	}
+    #contactInfoMap textarea{
+        height: 80px!important;
+    }
+    .wpcf7-submit{
+        padding: 5px 25px;
+        font-size: 16px;
+    }
+
+
+	/**************************/
+	/********** WORK **********/
+	/**************************/
+	.workPageProjects {
+		display: flex; }
+	.workPageProjects .projects {
+		background: url("img/projects.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px;
+		width: 33.333%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; }
+	.workPageProjects .projects p {
+		color: white;
+		font-size: 32px; }
+	.workPageProjects .projects a {
+		color: white;
+		border-radius: 100px;
+		padding: 10px 20px;
+		background-color: #23262b;
+		width: 40%;
+		margin: 0 auto; }
+
+	/**************************/
+	/******* SERVICES *******/
+	/**************************/
+
+	.servicesDescription{
+		padding: 20px 20px;
+	}
+	.servicesDescription h1{
+		color: #23262b;
+		font-size: 20px;
+		margin: 10px 0 5px;
+	}
+	.servicesDescription ul li{
+		font-size: 14px;
+	}
+	.servicesDescription h2{
+		text-align: center;
+		font-family: "proxima_novabold";
+		font-size: 16px;
+		margin: 20px 0 5px;
+	}
+
+	/***** FOOTER *****/
+	.mainFooter {
+		background-color: #23262b; }
+
+    /**************************/
+    /**** INDIVIDUAL PAGE *****/
+    /**************************/
+
+    .websiteButton{
+        width: 60%;
+    }
+
+	/******************************************************************************************************/
+	/********************************************* SLIDER **************************************************/
+	/******************************************************************************************************/
+
+	#slider, #slider .sliderInner {
+		width:100%;
+		height: 350px !important;/* Must be the same size as the slider images */
+		border-radius:3px;
+	}
+
+	/**************************/
+	/**** TYPE WRITER EFFECT *****/
+	/**************************/
+
+	.bannerTitle h1 {
+		font-size: 24px!important;
+		margin: 10px auto!important;
+	}
+
+	/**************************/
+	/**** PARALLAX *****/
+	/**************************/
+
+	#firstParallax{
+		display: none;
+	}
+
+	#secondParallax{
+		display: none;
+	}
+
+	/**************************/
+	/**** CONTACT FORM *****/
+	/**************************/
+
+	form{
+		margin-top: 10px;
+	}
+
+
+	.formSeperator{
+		margin-bottom: 20px;
+	}
+
+
+	.formSeperator label{
+		font-size: 18px;
+	}
+
+
+	.wpcf7-form input, .wpcf7-form textarea{
+		width: 80%!important;
+		font-size: 16px!important;
+	}
+
+	.contactInfoLogo{
+		flex-direction: column;
+		padding: 0!important;
+	}
+
+	.contactInfoLogo div{
+		width: 100%;
+	}
+
+	.contactInfoLogo div p{
+		margin: 15px!important;
+	}
+
+	/*.contactInfoLogo div p i{
+		font-size: 30px!important;
+	}*/
+
+}
+
+
+/*********************************************************************************************************************************************/
+/***************************************************** END RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/***************************************************** END RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/***************************************************** END RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+/***************************************************** END RESPONSIVE *************************************************************************/
+/*********************************************************************************************************************************************/
+
+
+
+/******************************************************************************************************/
+/********************************************* FONTS **************************************************/
+/******************************************************************************************************/
+
+@font-face {
+	font-family: 'proxima_novasemibold';
+	src: url("fonts/proximanova-semibold-webfont.eot");
+	src: url("fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("fonts/proximanova-semibold-webfont.woff") format("woff"), url("fonts/proximanova-semibold-webfont.ttf") format("truetype"), url("fonts/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+	font-weight: normal;
+	font-style: normal; }
+@font-face {
+	font-family: 'proxima_novabold';
+	src: url("fonts/proximanova-bold_1-webfont.eot");
+	src: url("fonts/proximanova-bold_1-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold_1-webfont.woff2") format("woff2"), url("fonts/proximanova-bold_1-webfont.woff") format("woff"), url("fonts/proximanova-bold_1-webfont.ttf") format("truetype"), url("fonts/proximanova-bold_1-webfont.svg#proxima_novabold") format("svg");
+	font-weight: normal;
+	font-style: normal; }
+@font-face {
+	font-family: 'proxima_novaregular';
+	src: url("fonts/proximanova-regular-webfont.eot");
+	src: url("fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular-webfont.woff2") format("woff2"), url("fonts/proximanova-regular-webfont.woff") format("woff"), url("fonts/proximanova-regular-webfont.ttf") format("truetype"), url("fonts/proximanova-regular-webfont.svg#proxima_novaregular") format("svg");
+	font-weight: normal;
+	font-style: normal; }
+@font-face {
+	font-family: 'proxima_novalight';
+	src: url("fonts/proximanova-light-webfont.eot");
+	src: url("fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light-webfont.woff2") format("woff2"), url("fonts/proximanova-light-webfont.woff") format("woff"), u
