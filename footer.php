@@ -1,6 +1,6 @@
 <footer class="mainFooter">
 	<div id="getInTouch">
-		<h1>Get in touch</h1>
+		<h1>Get in contact</h1>
 	</div>
 
 	<div id="contactSection">
